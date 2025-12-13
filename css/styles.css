@@ -97,8 +97,8 @@ main {
 nav svg {
     fill: var(--acent-clr);
     /* font-size: 1rem; */
-    width: 30px;
-    height: 30px;
+    /* width: 30px;
+    height: 30px; */
 }
 
 button {
