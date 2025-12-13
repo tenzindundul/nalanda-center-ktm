@@ -680,13 +680,34 @@ footer h3 {
 }
 
 /* All bullets (inactive) */
+.swiper-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+}
+
+@media (min-width: 768px) {
+    .swiper-pagination {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
+
 .swiper-pagination-bullet {
-    width: 10px !important ;
-    height: 10px !important;
+    width: 12px !important ;
+    height: 12px !important;
     background-color: var(--primary-bg) !important; /* inactive color */
     opacity: 0.9 !important; /* remove default fade */
     cursor: pointer;
     outline: none;
+}
+
+@media(min-width: 768px) {
+    .swiper-pagination-bullet {
+        width: 20px !important ;
+        height: 20px !important;
+    }
 }
 
 /* Active bullet */
