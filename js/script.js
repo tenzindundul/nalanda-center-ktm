@@ -40,27 +40,29 @@ function swiperImg() {
 }
 
 
-function headerShowHide() {
-    let lastScroll = 0;
+function navShowHide() {
+    // let lastScroll = 0;
     const header = document.querySelector('.header');
-    const hero = document.querySelector(".hero"); 
+    const nav = document.querySelector('.nav');
+
+    const headerHeight = header.offsetHeight;
 
     window.addEventListener('scroll', () => {
-        const current = window.scrollY;
+        // const current = window.scrollY;
 
-        if (current > lastScroll) {
-            header.classList.add("hide-header");
+        if (window.scrollY > headerHeight) {
+            nav.classList.add("sticky");
         } else {
-            header.classList.remove('hide-header');
+            nav.classList.remove('sticky');
         }
 
-        lastScroll = current;
+        // lastScroll = current;
     });
 }
 
 toggleMenu()
 swiperImg()
-headerShowHide()
+navShowHide()
 
 
 

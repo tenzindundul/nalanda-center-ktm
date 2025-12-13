@@ -696,20 +696,32 @@ footer h3 {
 
 /* scroll up nav show and donw hide css class */
 
-.placeholder {
-    height: 150px;
-}
+/* .placeholder {
+    height: 70px;
+} */
 
 header {
-    height: 80px;
+    /* position: absolute;
+    width: 100%;
+    top: 0; */
+    height: 100px;
 }
 
 nav {
+    position: relative;
     height: 70px;
+    /* transition: 0.5s ease-in-out; */
 }
 
-.header {
-    height: 150px;
+.nav.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* .header {
+    height: 100px;
     position: fixed;
     top: 0;
     transition: 1s ease-in;
@@ -719,26 +731,26 @@ nav {
     right: 0;
     width: 100%;
     /* background-color: var(--primary-bg); */
-}
+/* } */
 
-.header.hide-header {
+/* .header.hide-header {
     transform: translateY(-100%);
-}
+} */
 
 @media (min-width: 768px) {
-    .placeholder {
+    /* .placeholder {
         height: 180px;
-    }
+    } */
 
-    header {
+    /* header {
         height: 100px;
-    }
+    } */
 
     nav {
         height: 80px;
     }
 
-    .header {
+    /* .header {
         height: 180px;
-    }
+    } */
 }
