@@ -507,6 +507,8 @@ footer {
     text-align: center;
 }
 
+
+
 .footer_top {
     display: flex;
     flex-direction: column;
@@ -535,6 +537,18 @@ footer h3 {
     flex-direction: column;
     gap: 2rem;
 
+}
+
+.footer_bottom_top address p a {
+    color: var(--primary-bg);
+}
+
+.footer_bottom_top address p a:hover {
+    text-decoration: underline;
+}
+
+.footer_bottom_top address p a:active {
+    opacity: 0.8;
 }
 
 .footer_bottom_top, .footer_bottom_bottom {
@@ -572,6 +586,23 @@ footer h3 {
     justify-content: center;
 }
 
+address {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+footer address p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer address svg {
+    height: 30px;
+    width: 30px;
+    fill: var(--primary-bg);
+}
 
 
 .social-media-links ul li a svg { 
@@ -691,6 +722,7 @@ footer h3 {
         display: flex;
         justify-content: center;
         gap: 0.5rem;
+        margin-bottom: 5px;
     }
 }
 
