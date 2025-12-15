@@ -2,7 +2,7 @@
 /* connecting fonts from the assets */
 @font-face {
     font-family: 'font_1';
-    src: url(./fonts/Lato-Bold.woff) format('woff2'),
+    src: url(/fonts/Lato-Bold.woff) format('woff2'),
         url(../assets/fonts/woff/Lato-Bold.woff) format('woff');
     font-weight: normal;
     font-style: normal;
@@ -10,7 +10,7 @@
 }
 @font-face {
     font-family: 'font_2';
-    src: url(./fonts/lato.medium.woff) format('woff2'),
+    src: url(/fonts/lato.medium.woff) format('woff2'),
         url(../assets/fonts/woff/lato.medium.woff) format('woff');
     font-weight: normal;
     font-style: normal;
@@ -50,7 +50,7 @@
 }
 @font-face {
     font-family: 'font_7';
-    src: url(./fonts/RamusRegular.woff) format('woff2'),
+    src: url(/fonts/RamusRegular.woff) format('woff2'),
         url(../assets/fonts/woff/RamusRegular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
