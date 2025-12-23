@@ -2,56 +2,56 @@
 /* connecting fonts from the assets */
 @font-face {
     font-family: 'font_1';
-    src: url(../fonts/woff2/Lato-Bold.woff2) format('woff2'),
-        url(../fonts/woff2/Lato-Bold.woff2) format('woff');
+    src: url(fonts/woff2/Lato-Bold.woff2) format('woff2'),
+        url(fonts/woff2/Lato-Bold.woff2) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_2';
-    src: url(../fonts/woff2/lato.medium.woff2) format('woff2'),
-        url(../fonts/woff/lato.medium.woff) format('woff');
+    src: url(./lato.medium.woff2) format('woff2'),
+        url(./fonts/woff/lato.medium.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_3';
-    src: url(../fonts/woff2/Lato-Regular.woff2) format('woff2'),
-        url(../fonts/woff/Lato-Regular.woff) format('woff');
+    src: url(./fonts/woff2/Lato-Regular.woff2) format('woff2'),
+        url(./fonts/woff/Lato-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_4';
-    src: url(../fonts/woff2/LEMONMILK-Regular.woff2) format('woff2'),
-        url(../fonts/woff/LEMONMILK-Regular.woff) format('woff');
+    src: url(./fonts/woff2/LEMONMILK-Regular.woff2) format('woff2'),
+        url(./fonts/woff/LEMONMILK-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_5';
-    src: url(../fonts/woff2/LEMONMILK-Medium.woff2) format('woff2'),
-        url(../fonts/woff/LEMONMILK-Medium.woff) format('woff');
+    src: url(./fonts/woff2/LEMONMILK-Medium.woff2) format('woff2'),
+        url(./fonts/woff/LEMONMILK-Medium.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_6';
-    src: url(../fonts/woff2/MYRIADPRO-REGULAR.woff2) format('woff2'),
-        url(../fonts/woff/MYRIADPRO-REGULAR.woff) format('woff');
+    src: url(./fonts/woff2/MYRIADPRO-REGULAR.woff2) format('woff2'),
+        url(./fonts/woff/MYRIADPRO-REGULAR.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_7';
-    src: url(../fonts/woff2/RamusRegular.woff2) format('woff2'),
-        url(../fonts/woff/RamusRegular.woff) format('woff');
+    src: url(./RamusRegular.woff2) format('woff2'),
+        url(/fonts/woff/RamusRegular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
