@@ -765,12 +765,13 @@ nav {
         transparent
     );
     width: 100%;
-    height: clamp(60px, 8vw, 100px);
+    height: clamp(80px, 8vw, 150px);
     z-index: 999;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-bottom: 1rem;
 }
 
 
@@ -786,7 +787,7 @@ nav {
     .teaching_container img, .pilgrimage_tour_container img, .nalanda_villa_container img {
         width: 100%;
         height: calc(90vh - 80px);
-        aspect-ratio: 16 / 9;
+        /* aspect-ratio: 16 / 9; */
         object-fit: cover;
     }
 }
