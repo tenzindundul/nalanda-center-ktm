@@ -1,16 +1,12 @@
-/* .teaching_container {
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
-img {
+
+.teaching_container img {
     width: 100%;
     height: 100%;
 }
 
 @media (min-width: 768px) {
-    img {
+    .teaching_container img {
         width: 100%;
         height: calc(90vh - 80px);
         aspect-ratio: 16 / 9;
@@ -18,7 +14,19 @@ img {
     }
 }
 
+.teaching_container h2 {
+    color: var(--primary-bg)
+}
+
 .teaching {
     max-width: 1440px;
     margin: 0 auto;
 }
+
+.teaching_content ul li {
+    list-style: decimal;
+    margin-bottom: 1rem;
+}
+
+
+

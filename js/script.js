@@ -54,22 +54,6 @@ function toggleMenu() {
     });
 }
 
-function swiperImg() {
-    new Swiper('.swiper', {
-        loop: true,
-        autoplay: { delay: 3000 },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,   // optional but usually needed
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
-}
-
-
 function stickyNav() {
     const header = document.querySelector('.header');
     const nav = document.querySelector('.nav');
@@ -92,7 +76,6 @@ function stickyNav() {
 
 document.addEventListener('DOMContentLoaded', () => {
     toggleMenu();
-    swiperImg();
     stickyNav();
 });
 

@@ -2,56 +2,56 @@
 /* connecting fonts from the assets */
 @font-face {
     font-family: 'font_1';
-    src: url(./woff2/Lato-Bold.woff2) format('woff2'),
-        url(./woff/Lato-Bold.woff) format('woff');
+    src: url(../fonts/woff2/Lato-Bold.woff2) format('woff2'),
+        url(../fonts/woff2/Lato-Bold.woff2) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_2';
-    src: url(./woff2/lato.medium.woff2) format('woff2'),
-        url(./woff/lato.medium.woff) format('woff');
+    src: url(../fonts/woff2/lato.medium.woff2) format('woff2'),
+        url(../fonts/woff/lato.medium.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_3';
-    src: url(./woff2/Lato-Regular.woff2) format('woff2'),
-        url(./woff/Lato-Regular.woff) format('woff');
+    src: url(../fonts/woff2/Lato-Regular.woff2) format('woff2'),
+        url(../fonts/woff/Lato-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_4';
-    src: url(./woff2/LEMONMILK-Regular.woff2) format('woff2'),
-        url(./woff/LEMONMILK-Regular.woff) format('woff');
+    src: url(../fonts/woff2/LEMONMILK-Regular.woff2) format('woff2'),
+        url(../fonts/woff/LEMONMILK-Regular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_5';
-    src: url(./woff2/LEMONMILK-Medium.woff2) format('woff2'),
-        url(./woff/LEMONMILK-Medium.woff) format('woff');
+    src: url(../fonts/woff2/LEMONMILK-Medium.woff2) format('woff2'),
+        url(../fonts/woff/LEMONMILK-Medium.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_6';
-    src: url(./woff2/MYRIADPRO-REGULAR.woff2) format('woff2'),
-        url(./woff/MYRIADPRO-REGULAR.woff) format('woff');
+    src: url(../fonts/woff2/MYRIADPRO-REGULAR.woff2) format('woff2'),
+        url(../fonts/woff/MYRIADPRO-REGULAR.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
 @font-face {
     font-family: 'font_7';
-    src: url(./woff2/RamusRegular.woff2) format('woff2'),
-        url(./woff/RamusRegular.woff) format('woff');
+    src: url(../fonts/woff2/RamusRegular.woff2) format('woff2'),
+        url(../fonts/woff/RamusRegular.woff) format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -87,7 +87,9 @@ p {
     font-size: clamp(1rem, 2vw, 1.2rem);
     line-height: 1.5;
     letter-spacing: 0px;
+    margin-bottom: 1rem;
 }
+
 h1 {
     font-weight: normal;
 }
@@ -189,8 +191,7 @@ nav button:active {
 }
 
 
-@media(min-width: 768px) {
-    
+@media(min-width: 900px) {
     .nav_title {
         display: none
     }
@@ -406,7 +407,7 @@ legend {
 }
 .image img {
     border-radius: clamp(2rem, 3vw, 3rem);
-    border: 1.5px solid var(--acent-clr);
+    outline: 1.5px solid var(--acent-clr);
     transition: 0.2s ease-in-out;
     cursor: pointer;
     height: 100%;
@@ -635,7 +636,7 @@ footer .hr-desktop {
     bottom: 0;
     background-color: var(--seconday-bg);
     color: var(--acent-clr);
-    z-index: 999;
+    z-index: 2000;
     transition: 0.3s ease-in-out;
     transition: 0.6s ease-in;
     box-shadow: 0px 2px 4px 0 var(--acent-clr);
@@ -717,4 +718,57 @@ nav {
     nav {
         height: 80px;
     }
+}
+
+/* pages style */
+
+.teaching_container, .pilgrimage_tour_container, .nalanda_villa_container {
+    position: relative;
+}
+
+.teaching_container h2, .pilgrimage_tour_container h2, .nalanda_villa_container h2 {
+    color: var(--primary-bg);
+}
+
+.pilgrimage_tour_container p {
+    color: var(--primary-bg);
+}
+
+.nalanda_villa_content, .pilgrimage_tour_content , .teaching_content {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.teaching_content ul, .nalanda_villa_content ul {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.nalanda_villa_content ul {
+    margin-left: 2rem;
+}
+
+.teaching_content ul li, .nalanda_villa_content ul li {
+    list-style: decimal;
+    margin-bottom: 1rem;
+}
+
+.shade {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        to top,
+        var(--acent-clr),
+        transparent
+    );
+    width: 100%;
+    height: clamp(60px, 8vw, 100px);
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }

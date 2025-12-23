@@ -6,13 +6,13 @@
 } */
 
 
-img {
+.nalanda_villa_container img {
     width: 100%;
     height: 100%;
 }
 
 @media (min-width: 768px) {
-    img {
+    .nalanda_villa_container img {
         width: 100%;
         height: calc(90vh - 80px);
         aspect-ratio: 16 / 9;
