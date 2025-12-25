@@ -375,9 +375,12 @@ fieldset {
     border: 2px solid var(--acent-clr);
 }
 legend {
-    font-family: var(--ramus-semibold), system-ui, sans-serif;
     padding: 0 1rem;
-    font-weight: 400;
+}
+
+legend h2 {
+    font-family: var(--ramus-regular), system-ui, sans-serif;
+    font-weight: normal;
 }
 
 /* projects */
