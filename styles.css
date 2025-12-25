@@ -57,6 +57,15 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'font_8';
+    src: url(./RamusSemiBold.woff2) format('woff2'),
+        url(/fonts/woff/RamusSemiBold.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* ============  defaults  ================================= */
 /* defaults that is needed for the webiste to work plz don't touch this. */
 
@@ -98,6 +107,7 @@ h1 {
 }
 h2 {
     font-size: clamp(2rem, 3vw, 3rem);
+    /* font-family: var(--ramus-semibold); */
 }
 h3 {
     font-size: clamp(1.5rem, 3vw, 2rem);
@@ -131,6 +141,7 @@ svg {
     --lemon-milk-medium: 'font_5';
     --myriad-pro: 'font_6';
     --ramus-regular: 'font_7';
+    --ramus-semibold: 'font_8';
 }
 
 
@@ -364,8 +375,12 @@ fieldset {
     border: 2px solid var(--acent-clr);
 }
 legend {
-    font-family: var(--lato-bold), system-ui, sans-serif;
     padding: 0 1rem;
+}
+
+legend h2 {
+    font-family: var(--ramus-regular), system-ui, sans-serif;
+    font-weight: normal;
 }
 
 /* projects */
@@ -374,7 +389,7 @@ legend {
     color: var(--primary-bg);
     text-align: center;
     padding: 1rem;
-    font-family: var(--lato-bold), system-ui, sans-serif;
+    font-family: var(--ramus-semibold), system-ui, sans-serif;
 }
 
 .projects img {
@@ -637,7 +652,7 @@ footer .hr-desktop {
 
 /* nav popup */
 .nav_popup {
-    /* display: none; */
+    display: none;
     position: sticky;
     top: 180px;
     left: 0;
@@ -662,7 +677,7 @@ footer .hr-desktop {
     flex-direction: column;
     padding: 1rem;
     gap: 0.3rem;
-    max-width: 500px;
+    max-width: 400px;
     margin: 0 auto;
 }
 
@@ -681,6 +696,7 @@ footer .hr-desktop {
 }
 
 .nav_popup.active {
+    display: flex;
     opacity: 1;
     transition-duration: 0.5s; 
 }
@@ -781,6 +797,10 @@ nav {
     align-items: center;
     justify-content: flex-end;
     padding-bottom: 1rem;
+}
+
+.shade h2 {
+    font-family: var(--ramus-semibold);
 }
 
 .pilgrimage_tour_container .shade {

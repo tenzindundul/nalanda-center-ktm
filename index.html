@@ -18,6 +18,22 @@
     <script defer src="js/sticky_nav.js"></script>
     <script defer src="js/toggle.js"></script>
     <script defer src="js/swiper.js"></script>
+
+    <link rel="preload" href="./RamusRegular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./lato.medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link
+        rel="preload"
+        as="image"
+        href="slider/hero.webp"
+        imagesrcset="
+            slider/hero_mobile.webp 414w,
+            slider/hero.webp 768w
+        "
+        imagesizes="(max-width: 768px) 414px, 768px"
+    >
+
+    
+
 </head>
 <body>
     <header class="header">
@@ -176,7 +192,13 @@
                         <div class="content">
                             <h3>PILGRIMAGE TOURS:</h3>
 
-                            <p>Our pilgrimage tours are thoughtfully designed to combine sacred travel with authentic spiritual practice, guided by profound teachings and ceremonial blessings. Main pilgrimage destinations include: Main pilgrimage destinations include: Kathmandu Valley, Lumbini, Bodhgaya, Varanasi & Sarnath etc.</p>
+                            <p>Our pilgrimage tours are thoughtfully
+designed to combine sacred travel with
+authentic spiritual practice, guided by
+profound teachings and ceremonial
+blessings. Main pilgrimage destinations
+include: Kathmandu Valley, Lumbini,
+Bodhgaya, Varanasi & Sarnath etc</p>
 
                             <a class="project_btn project_btn_reverse btn" aria-label="pilgrimage tour page" href="pages/pilgrimage_tours.html">
                                 Read more<span class="descriptive_link_text">Read more about Pilgrimage tours.</span><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/></svg>
@@ -212,18 +234,17 @@
     </main>
 
     <footer>
-        <div class="footer_container container" id="contact">
+        <div class="footer_container container" >
             <div class="footer_top">
                 <h2>Nalanda Center Ktm</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit natus dolore eligendi nesciunt nihil vel tempora labore, maxime quas incidunt consequuntur voluptatibus aliquid velit corporis unde doloribus. Perferendis, quisquam quis.
-                Recusandae, nobis quidem? Reiciendis, minus illo et dicta, veniam perspiciatis impedit eaque error ipsum quod obcaecati animi cupiditate incidunt, excepturi delectus at eum voluptas quae voluptate adipisci repellendus! Reiciendis, error.</p>
+                <p>Nalanda Center is a peaceful spiritual retreat dedicated to those seeking a more meaningful and conscious way of life. We offer a supportive environment to stay, learn, and practice Buddha Dharma under the guidance of a qualified Buddhist Master, helping seekers cultivate inner peace, clarity, and truth.</p>
             </div>
 
             <hr class="hr-mobile hr">
             <hr class="hr-desktop">
 
 
-            <div class="footer_bottom">
+            <div class="footer_bottom" id="contact">
                 <div class="footer_bottom_top">
                     <h3>CONTACT US AT:</h3>
                     <address>
